@@ -1,0 +1,27 @@
+# LzyDwm
+
+#/bin/bash 
+
+
+dwm
+$ git clone git://git.suckless.org/dwm
+$ sudo apt-get install git st make libx11-dev libxft-dev libxinerama-dev xorg xinit suckless-tools
+$ make 
+$ sudo make clean install
+
+dwmstatus
+$ git clone git://git.suckless.org/dwmstatus
+$ cd dwmstatus
+$ make
+$ make PREFIX=/usr install
+
+.xinitrc
+dwmstatus 2>&1 >/dev/null &
+exec setxkbmap -layout us,ru -option grp:ctrl_shift_toggle
+exec dwm
+
+Error dwmstatus status battery when not charning
+
+100% charning full
+**% charning off
+**% (not edit on status) charning on
