@@ -21,6 +21,6 @@ exec dwm
 
 #Error dwmstatus status battery when not charning
 
-# 100% charning full
-# **% charning off
-# **% (not edit on status) charning on
+#100% charning full
+#**% charning off
+#**% (not edit on status) charning on
